@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
@@ -20,51 +20,55 @@ const config = {
     },
     extend: {
       colors: {
+        // Core Semantic Colors (using CSS variables still)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#1FB6FF", // Aqua Blue
+          foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#FF7849", // Sunset Orange
+          foreground: "#ffffff",
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "#FF4949", // Bright Red
+          foreground: "#ffffff",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#F5F7FA", // Light Gray
+          foreground: "#64748B", // Slate
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#A78BFA", // Vivid Purple
+          foreground: "#ffffff",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "#ffffff",
+          foreground: "#111827",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "#ffffff",
+          foreground: "#1F2937", // Gray-800
         },
-        // New Deep Blue Theme
-        "swp-blue": "hsl(var(--swp-blue))",
-        "swp-red": "hsl(var(--swp-red))",
-        "swp-green": "hsl(var(--swp-green))",
-        "swp-orange": "hsl(var(--swp-orange))",
-        "swp-teal": "hsl(var(--swp-teal))",
+
+        // SWP Custom Theme Colors (Rebranded)
+        "swp-blue": "#00C2FF",     // Sky Blue
+        "swp-red": "#FF4C61",      // Coral Red
+        "swp-green": "#22C55E",    // Emerald
+        "swp-orange": "#FDBA74",   // Light Orange
+        "swp-teal": "#2DD4BF",     // Bright Teal
+
+        // Chart Colors – Bright, Clean, Eye-Catching
         chart: {
-          "1": "hsl(var(--chart-1))",
-          "2": "hsl(var(--chart-2))",
-          "3": "hsl(var(--chart-3))",
-          "4": "hsl(var(--chart-4))",
-          "5": "hsl(var(--chart-5))",
+          "1": "#00BFFF", // Deep Sky Blue
+          "2": "#FF8C00", // Dark Orange
+          "3": "#7C3AED", // Indigo
+          "4": "#10B981", // Emerald
+          "5": "#F43F5E", // Rose
         },
       },
       borderRadius: {
@@ -92,6 +96,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
