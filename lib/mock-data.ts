@@ -2,9 +2,9 @@
 
 export const kpiData = {
   totalWorkforce: { title: "Total Workforce", metric: "276,514", change: "+2.5%", changeType: "positive" },
-  hiringNeeds: { title: "Hiring Needs (1Y)", metric: "512", change: "+15.2%", changeType: "positive" },
+  hiringNeeds: { title: "Hiring Needs (1Y)", metric: "1103", change: "+15.2%", changeType: "positive" },
   budget: { title: "Budget Allocation", metric: "$125.4M", change: "-1.8%", changeType: "negative" },
-  gaps: { title: "Critical Role Gaps", metric: "18", change: "+3", changeType: "negative" },
+  gaps: { title: "Critical Role Gaps", metric: "408", change: "+3", changeType: "negative" },
 }
 
 export const trendsData = [
